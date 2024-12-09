@@ -62,9 +62,8 @@
         function appendNumber(number) {
             display.value += number;
         }
-
+      
         // Add event listener for keydown event
-
         document.addEventListener('keydown', function(event) {
             let key = event.key;
             console.log(key);
@@ -78,23 +77,6 @@
                 clearDisplay();
             }
         });
-
-        // document.onload = function() {
-        //     display.value = '';
-        //     document.addEventListener('keydown', function(event) {
-        //         let key = event.key;
-        //         console.log(key);
-        //         if (key >= '0' && key <= '9') {
-        //             appendNumber(key);
-        //         } else if (key === '+' || key === '-' || key === '*' || key === '/') {
-        //             setOperation(key);
-        //         } else if (key === 'Enter') {
-        //             calculateResult();
-        //         } else if (key === 'c' || key === 'C') {
-        //             clearDisplay();
-        //         }
-        //     });
-        // }
 
         function setOperation(operation) {
             firstOperand = display.value;
